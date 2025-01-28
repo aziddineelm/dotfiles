@@ -2,7 +2,7 @@
 local wezterm = require("wezterm")
 
 -- Utility functions
-local window_background_opacity = 0.9
+local window_background_opacity = 0.85
 local function toggle_window_background_opacity(window)
 	local overrides = window:get_config_overrides() or {}
 	if not overrides.window_background_opacity then
@@ -42,7 +42,7 @@ end
 
 -- Appearance
 config.font = wezterm.font("JetBrainsMono Nerd Font")
-config.font_size = 13.0
+config.font_size = 14.0
 config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = window_background_opacity
 config.macos_window_background_blur = 10
