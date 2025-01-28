@@ -42,13 +42,13 @@ end
 
 -- Appearance
 config.font = wezterm.font("JetBrainsMono Nerd Font")
-config.font_size = 14.0
+config.font_size = 13.5
 config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = window_background_opacity
 config.macos_window_background_blur = 10
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
--- config.native_macos_fullscreen_mode = false
+config.native_macos_fullscreen_mode = false
 config.use_fancy_tab_bar = false
 
 -- Keybindings
