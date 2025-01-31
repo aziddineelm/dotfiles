@@ -12,6 +12,7 @@ fi
 
 export PATH="$HOME/.local/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="$PATH:/home/ael-mans/Downloads/squashfs-root/usr/bin"
 export PATH="$HOME:/home/ael-mans:$PATH"
 
 
