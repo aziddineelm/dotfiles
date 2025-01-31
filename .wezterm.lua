@@ -41,7 +41,7 @@ if wezterm.config_builder then
 end
 
 -- Appearance
-config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("JetBrainsMono Nerd Font Mono")
 config.font_size = 13.5
 config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = window_background_opacity

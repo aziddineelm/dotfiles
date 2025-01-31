@@ -10,8 +10,10 @@ fi
 
 # Path to your Oh My Zsh installation.
 
+export PATH="$HOME/.local/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
-export NVKICK="$HOME/.config/kickstart/"
+export PATH="$HOME:/home/ael-mans:$PATH"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -108,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 alias nv='nvim'
 alias q='exit'
 alias cls='clear'
-alias gasp='~/scripts/gasp.sh'
+alias gasp='/home/ael-mans/scripts/gasp.sh'
 alias wezterm='flatpak run org.wezfurlong.wezterm'
 
 # eza (better `ls`)
@@ -187,4 +189,4 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
