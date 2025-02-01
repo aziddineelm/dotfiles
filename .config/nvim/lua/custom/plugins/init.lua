@@ -6,10 +6,10 @@
 -- See the kickstart.nvim README for more information
 return {
 
-	{
-		"github/copilot.vim",
-		lazy = false, -- Ensure it loads automatically
-	},
+	-- {
+	-- 	"github/copilot.vim",
+	-- 	lazy = false, -- Ensure it loads automatically
+	-- },
 
 	-- barbra for the tabs when you open a buffer or something like that
 	{
