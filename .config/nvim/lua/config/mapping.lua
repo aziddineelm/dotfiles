@@ -81,7 +81,7 @@ set("n", "<leader>bd", ":bdelete<CR>", { desc = "Close current buffer" })
 set("n", "<leader>bd!", ":bdelete!<CR>", { desc = "Force close current buffer" })
 
 -- Close all buffers except the current one
-set("n", "<leader>bo", ":bdelete | only<CR>", { desc = "Close other buffers" })
+set("n", "<leader>bo", ":%bufdo if bufnr('%') != bufnr('$') | bdelete | endif", { desc = "Close other buffers" })
 
 -- Close a specific buffer by its number
 set("n", "<leader>bs", ":bdelete ", { desc = "Close specific buffer (enter buffer number)" })
