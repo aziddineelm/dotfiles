@@ -53,8 +53,16 @@ config.use_fancy_tab_bar = false
 
 -- Keybindings
 config.keys = {
-	{ key = "O", mods = "CTRL|SHIFT", action = wezterm.action.EmitEvent("toggle-window-background-opacity") },
-	{ key = "E", mods = "CTRL|SHIFT", action = wezterm.action.EmitEvent("toggle-ligatures") },
+	{
+		key = "O",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.EmitEvent("toggle-window-background-opacity"),
+	},
+	{
+		key = "E",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.EmitEvent("toggle-ligatures"),
+	},
 	-- Quickly open config file with common macOS keybind
 	{
 		key = ",",
@@ -65,13 +73,37 @@ config.keys = {
 		}),
 	},
 	-- Switch between panes using Ctrl + h/j/k/l
-	{ key = "h", mods = "ALT|SUPER", action = wezterm.action.ActivatePaneDirection("Left") },
-	{ key = "l", mods = "ALT|SUPER", action = wezterm.action.ActivatePaneDirection("Right") },
-	{ key = "k", mods = "ALT|SUPER", action = wezterm.action.ActivatePaneDirection("Up") },
-	{ key = "j", mods = "ALT|SUPER", action = wezterm.action.ActivatePaneDirection("Down") },
+	{
+		key = "h",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Left"),
+	},
+	{
+		key = "l",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Right"),
+	},
+	{
+		key = "k",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Up"),
+	},
+	{
+		key = "j",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Down"),
+	},
 	-- Resize panes using Alt + h/j/k/l
-	{ key = "h", mods = "CTRL|SUPER", action = wezterm.action.AdjustPaneSize({ "Left", 5 }) },
-	{ key = "l", mods = "CTRL|SUPER", action = wezterm.action.AdjustPaneSize({ "Right", 5 }) },
+	{
+		key = "h",
+		mods = "CTRL|SUPER",
+		action = wezterm.action.AdjustPaneSize({ "Left", 5 }),
+	},
+	{
+		key = "l",
+		mods = "CTRL|SUPER",
+		action = wezterm.action.AdjustPaneSize({ "Right", 5 }),
+	},
 	{ key = "k", mods = "CTRL|SUPER", action = wezterm.action.AdjustPaneSize({ "Up", 5 }) },
 	{ key = "j", mods = "CTRL|SUPER", action = wezterm.action.AdjustPaneSize({ "Down", 5 }) },
 }
