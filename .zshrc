@@ -10,6 +10,7 @@ fi
 
 # Path to your Oh My Zsh installation.
 
+export PATH=$HOME/.local/bin:$PATH
 export PATH="$HOME/.local/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/home/ael-mans/Downloads/squashfs-root/usr/bin"
