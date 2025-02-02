@@ -73,15 +73,47 @@ config.keys = {
 		}),
 	},
 	-- Switch between panes using Ctrl + h/j/k/l
-	{ key = "h", mods = "CTRL", action = wezterm.action.ActivatePaneDirection("Left") },
-	{ key = "l", mods = "CTRL", action = wezterm.action.ActivatePaneDirection("Right") },
-	{ key = "k", mods = "CTRL", action = wezterm.action.ActivatePaneDirection("Up") },
-	{ key = "j", mods = "CTRL", action = wezterm.action.ActivatePaneDirection("Down") },
+	{
+		key = "h",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Left"),
+	},
+	{
+		key = "l",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Right"),
+	},
+	{
+		key = "k",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Up"),
+	},
+	{
+		key = "j",
+		mods = "ALT|SUPER",
+		action = wezterm.action.ActivatePaneDirection("Down"),
+	},
 	-- Resize panes using Alt + h/j/k/l
-	{ key = "h", mods = "ALT", action = wezterm.action.AdjustPaneSize({ "Left", 5 }) },
-	{ key = "l", mods = "ALT", action = wezterm.action.AdjustPaneSize({ "Right", 5 }) },
-	{ key = "k", mods = "ALT", action = wezterm.action.AdjustPaneSize({ "Up", 5 }) },
-	{ key = "j", mods = "ALT", action = wezterm.action.AdjustPaneSize({ "Down", 5 }) },
+	{
+		key = "h",
+		mods = "CTRL|SUPER",
+		action = wezterm.action.AdjustPaneSize({ "Left", 5 }),
+	},
+	{
+		key = "l",
+		mods = "CTRL|SUPER",
+		action = wezterm.action.AdjustPaneSize({ "Right", 5 }),
+	},
+	{
+		key = "k",
+		mods = "CTRL|SUPER",
+		action = wezterm.action.AdjustPaneSize({ "Up", 5 }),
+	},
+	{
+		key = "j",
+		mods = "CTRL|SUPER",
+		action = wezterm.action.AdjustPaneSize({ "Down", 5 }),
+	},
 }
 
 -- Return config to WezTerm
