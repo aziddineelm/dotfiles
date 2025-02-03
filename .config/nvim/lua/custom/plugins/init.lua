@@ -18,6 +18,9 @@ return {
 		main = "nvim-silicon",
 		opts = {
 			-- Configuration here, or leave empty to use defaults
+			theme = "Dracula",
+			font = "JetBrainsMono Nerd Font Mono",
+			background = "#32343F",
 			line_offset = function(args)
 				return args.line1
 			end,

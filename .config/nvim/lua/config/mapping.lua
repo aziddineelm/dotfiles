@@ -91,3 +91,6 @@ set("n", "<leader>bl", ":ls<CR>", { desc = "List all buffers" })
 
 -- See installed colorschem
 set("n", "<leader>ct", ":Telescope colorscheme<CR>", { noremap = true, silent = true })
+
+-- Screenshoot with silicon
+set("n", "<leader>sc", ":Silion<CR>", { desc = "Snapshot Code" })
