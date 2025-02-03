@@ -93,4 +93,4 @@ set("n", "<leader>bl", ":ls<CR>", { desc = "List all buffers" })
 set("n", "<leader>ct", ":Telescope colorscheme<CR>", { noremap = true, silent = true })
 
 -- Screenshoot with silicon
-set("n", "<leader>sc", ":Silion<CR>", { desc = "Snapshot Code" })
+set("v", "<leader>sc", ":Silicon<CR>", { desc = "Snapshot Code" })
