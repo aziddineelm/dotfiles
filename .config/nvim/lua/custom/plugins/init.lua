@@ -12,6 +12,22 @@ return {
 	-- },
 
 	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		opts = {
+			-- add any options here
+		},
+		dependencies = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		},
+	},
+
+	{
 		"michaelrommel/nvim-silicon",
 		lazy = true,
 		cmd = "Silicon",
@@ -52,26 +68,5 @@ return {
 			-- },
 		},
 		version = "^1.0.0",
-	},
-
-	-- autopairs to pair special character like ("{", "[", ...)
-	{
-		"windwp/nvim-autopairs",
-		opts = {
-			fast_wrap = {
-				map = "<C-e>", -- Example: Use Ctrl+e for fast wrapping
-				chars = { "{", "[", "(", '"', "'" },
-			},
-			disable_filetype = { "TelescopePrompt", "vim", "cmp_docs" }, -- Add cmp_docs
-			check_ts = true, -- Enable tree-sitter integration for more accurate pairing
-		},
-		config = function(_, opts)
-			require("nvim-autopairs").setup(opts)
-
-			-- Setup cmp for autopairs (improved)
-			local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-			local cmp = require("cmp")
-			cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map = true })) -- Map the function
-		end,
 	},
 }

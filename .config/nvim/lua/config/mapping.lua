@@ -94,3 +94,6 @@ set("n", "<leader>ct", ":Telescope colorscheme<CR>", { noremap = true, silent = 
 
 -- Screenshoot with silicon
 set("v", "<leader>sc", ":Silicon<CR>", { desc = "Snapshot Code" })
+
+-- Dismiss Noice message
+set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice message" })
