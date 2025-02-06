@@ -80,6 +80,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
 
 -- Example usage:
 vim.api.nvim_create_user_command("ToggleTerminal", toggle_terminal, {})
-vim.keymap.set({ "n", "t" }, "<space>ty", toggle_terminal)
+vim.keymap.set({ "n", "t" }, "<space>ty", toggle_terminal, { desc = "Toggle terminal" })
 
 return {}
