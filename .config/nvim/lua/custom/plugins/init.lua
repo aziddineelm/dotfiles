@@ -6,10 +6,20 @@
 -- See the kickstart.nvim README for more information
 return {
 
-	-- {
-	-- 	"github/copilot.vim",
-	-- 	lazy = false, -- Ensure it loads automatically
-	-- },
+	{
+		"github/copilot.vim",
+		lazy = false, -- Ensure it loads automatically
+	},
+
+	{
+		"Pocco81/auto-save.nvim",
+		config = function()
+			require("auto-save").setup({
+				-- your config goes here
+				-- or just leave it empty :)
+			})
+		end,
+	},
 
 	{
 		"folke/noice.nvim",
