@@ -8,8 +8,8 @@ set("i", "<C-l>", "<Right>", { desc = "Move cursor right in insert mode" })
 set("i", "<C-j>", "<Down>", { desc = "Move cursor down in insert mode" })
 set("i", "<C-k>", "<Up>", { desc = "Move cursor up in insert mode" })
 
-set("v", "<C-n>", ":NvimTreeToggle<CR>")
-set("n", "<C-n>", ":NvimTreeToggle<CR>")
+-- set("v", "<C-n>", ":NvimTreeToggle<CR>")
+-- set("n", "<C-n>", ":NvimTreeToggle<CR>")
 
 -- Resize splits
 set("n", "<M-l>", "<C-w>5>", { desc = "Move focus to the upper window" })
