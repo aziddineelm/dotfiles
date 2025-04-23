@@ -11,6 +11,9 @@ set("i", "<C-k>", "<Up>", { desc = "Move cursor up in insert mode" })
 -- set("v", "<C-n>", ":NvimTreeToggle<CR>")
 -- set("n", "<C-n>", ":NvimTreeToggle<CR>")
 
+-- Open Oil
+set("n", "<C-n>", "<cmd>Oil<CR>", { noremap = true, silent = true })
+
 -- Resize splits
 set("n", "<M-l>", "<C-w>5>", { desc = "Move focus to the upper window" })
 set("n", "<M-h>", "<C-w>5<", { desc = "Move focus to the upper window" })

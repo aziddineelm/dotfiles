@@ -6,6 +6,18 @@
 -- See the kickstart.nvim README for more information
 return {
 
+	-- ft_count_lines
+	{
+		"FtVim/ft_count_lines.nvim",
+		config = function()
+			require("ft_count_lines").setup({
+				enable_on_start = true,
+				keybinding = "<leader>cl",
+				show_under_function = true, -- New option to display count under function name
+			})
+		end,
+	},
+
 	-- Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.
 	{
 		"folke/noice.nvim",

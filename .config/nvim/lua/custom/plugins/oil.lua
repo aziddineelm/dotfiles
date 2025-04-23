@@ -5,7 +5,7 @@ return {
 		---@type oil.SetupOpts
 		opts = {
 			view_options = {
-				show_hidden = true, -- Show hidden files (files starting with .)
+				delete_to_trash = true,
 			},
 		},
 		-- Optional dependencies
