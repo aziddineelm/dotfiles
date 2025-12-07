@@ -9,6 +9,7 @@ return {
 	-- ft_count_lines
 	{
 		"FtVim/ft_count_lines.nvim",
+		ft = { "c" },
 		config = function()
 			require("ft_count_lines").setup({
 				enable_on_start = true,
