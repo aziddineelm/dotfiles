@@ -41,7 +41,7 @@ if wezterm.config_builder then
 end
 
 -- Appearance
-config.font = wezterm.font("JetBrainsMono Nerd Font Mono")
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 13.5
 config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = window_background_opacity
@@ -50,6 +50,9 @@ config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = false
 config.use_fancy_tab_bar = false
+
+-- Disable the bell
+config.audible_bell = "Disabled"
 
 -- Keybindings
 config.keys = {
