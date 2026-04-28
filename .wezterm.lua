@@ -46,10 +46,21 @@ config.font_size = 13.5
 config.color_scheme = "Catppuccin Mocha"
 config.window_background_opacity = window_background_opacity
 config.macos_window_background_blur = 10
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE | RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.native_macos_fullscreen_mode = false
 config.use_fancy_tab_bar = false
+
+config.window_frame = {
+	border_left_width = "2px",
+	border_right_width = "2px",
+	border_bottom_height = "2px",
+	border_top_height = "2px",
+	border_left_color = "#585b70",
+	border_right_color = "#585b70",
+	border_bottom_color = "#585b70",
+	border_top_color = "#585b70",
+}
 
 -- Disable the bell
 config.audible_bell = "Disabled"
