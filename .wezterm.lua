@@ -64,6 +64,7 @@ config.window_frame = {
 
 -- Disable the bell
 config.audible_bell = "Disabled"
+config.hide_mouse_cursor_when_typing = false
 
 -- Keybindings
 config.keys = {
