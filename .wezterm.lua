@@ -25,15 +25,6 @@ local function toggle_ligatures(window)
 end
 wezterm.on("toggle-ligatures", toggle_ligatures)
 
--- Returns color scheme dependant on operating system theme setting (dark/light)
--- local function color_scheme_for_appearance(appearance)
--- 	if appearance:find("Dark") then
--- 		return "Tokyo Night"
--- 	else
--- 		return "Tokyo Night Day"
--- 	end
--- end
-
 -- Initialize actual config
 local config = {}
 if wezterm.config_builder then
