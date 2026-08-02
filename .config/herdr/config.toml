@@ -1,0 +1,17 @@
+onboarding = false
+[keys]
+
+# Prefix
+prefix = "ctrl+space"
+
+split_vertical = "prefix+%"
+split_horizontal = 'prefix+"'
+
+# Toggle the side panel
+toggle_sidebar = "prefix+p"
+
+# Toggle full screen
+fullscreen = "prefix+z"
+
+navigate_workspace_down = "j"
+navigate_workspace_up = "k"
