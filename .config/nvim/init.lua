@@ -637,6 +637,8 @@ require("lazy").setup({
 				clangd = {},
 				rust_analyzer = {},
 				taplo = {},
+				dockerls = {},
+				docker_compose_language_service = {},
 				-- gopls = {},
 				-- pyright = {},
 				-- rust_analyzer = {},
